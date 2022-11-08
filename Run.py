@@ -229,7 +229,7 @@ def Hapus(cookie, userid, delay):
                         Console(width=40, style="bold deep_sky_blue4").print(Panel(f"""[bold white][*] Status :[bold green] Sukses
 [bold white][*] Name   : {name.title()}
 [bold white][*] Userid : {uid}""", title="✅"))
-                        open('Data/Terhapus.txt','a+').write(str(uid))
+                        open('Data/Terhapus.txt','a+').write(str(uid) + '\n')
                     else:
                         Console(width=40, style="bold deep_sky_blue4").print(Panel(f"""[bold white][*] Status :[bold red] Sukses
 [bold white][*] Name   : {name.title()}
